@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const IMG = {
   s1_collage: "https://cdn.poehali.dev/projects/85b8eb9c-9fea-4de1-9ebb-88a877eea460/files/84cfdc1b-afca-4806-b15e-559d1f379dc1.jpg",
-  s3_chimp:   "https://cdn.poehali.dev/projects/85b8eb9c-9fea-4de1-9ebb-88a877eea460/files/b4108e4b-2ab4-448f-a1d1-4e142cc66c99.jpg",
+  s3_chimp:   "https://cdn.poehali.dev/projects/85b8eb9c-9fea-4de1-9ebb-88a877eea460/files/de072018-04ff-4034-8c4b-7bd38775852b.jpg",
   s4_lion:    "https://cdn.poehali.dev/projects/85b8eb9c-9fea-4de1-9ebb-88a877eea460/files/7e4f9620-46c8-47e0-b661-23fbc1d9c566.jpg",
   s5_peacock: "https://cdn.poehali.dev/projects/85b8eb9c-9fea-4de1-9ebb-88a877eea460/files/c733fa07-6c2e-4a33-92db-838f1af62223.jpg",
   s6_dolphin: "https://cdn.poehali.dev/projects/85b8eb9c-9fea-4de1-9ebb-88a877eea460/files/4e49ba06-c62c-40d6-99ab-a0e8c05cfeaf.jpg",
@@ -102,30 +102,30 @@ function Slide3() {
   ];
   return (
     <div className="slide-container">
-      <BgImg src={IMG.s3_chimp} tint="rgba(5,30,10,0.58)" />
+      <BgImg src={IMG.s3_chimp} tint="rgba(5,30,10,0.52)" />
       <div className="relative z-10 h-full flex items-center px-16">
-        <div className="w-1/2">
+        <div className="w-3/5">
           <Tag color="#86efac">Введение</Tag>
-          <h2 className="text-5xl font-black text-white mb-5 leading-tight" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+          <h2 className="text-7xl font-black text-white mb-6 leading-tight" style={{ fontFamily: "'Montserrat', sans-serif", textShadow: "0 4px 40px rgba(0,0,0,0.8)" }}>
             Коммуникация —<br />основа жизни
           </h2>
-          <div className="space-y-3 mb-5">
-            <div className="p-4 rounded-2xl" style={{ background: "rgba(134,239,172,0.12)", border: "1px solid rgba(134,239,172,0.25)", backdropFilter: "blur(6px)" }}>
-              <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "#86efac" }}>Цель проекта</p>
-              <p className="text-white text-sm leading-relaxed">Исследовать формы и механизмы коммуникации у животных, понять их значение для жизни и адаптации видов.</p>
+          <div className="space-y-3 mb-6">
+            <div className="p-5 rounded-2xl" style={{ background: "rgba(134,239,172,0.12)", border: "1px solid rgba(134,239,172,0.25)", backdropFilter: "blur(6px)" }}>
+              <p className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: "#86efac" }}>Цель проекта</p>
+              <p className="text-white text-base leading-relaxed">Исследовать формы и механизмы коммуникации у животных, понять их значение для жизни и адаптации видов.</p>
             </div>
-            <div className="p-4 rounded-2xl" style={{ background: "rgba(253,224,71,0.08)", border: "1px solid rgba(253,224,71,0.2)", backdropFilter: "blur(6px)" }}>
-              <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "#fde047" }}>Актуальность</p>
-              <p className="text-white text-sm leading-relaxed">Важен для понимания животного мира, его адаптации и эволюции.</p>
+            <div className="p-5 rounded-2xl" style={{ background: "rgba(253,224,71,0.08)", border: "1px solid rgba(253,224,71,0.2)", backdropFilter: "blur(6px)" }}>
+              <p className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: "#fde047" }}>Актуальность</p>
+              <p className="text-white text-base leading-relaxed">Важен для понимания животного мира, его адаптации и эволюции.</p>
             </div>
           </div>
-          <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#7dd3fc" }}>Задачи</p>
+          <p className="text-sm font-bold uppercase tracking-widest mb-3" style={{ color: "#7dd3fc" }}>Задачи</p>
           <div className="grid grid-cols-2 gap-2">
             {tasks.map((t, i) => (
-              <div key={i} className="flex items-start gap-2 p-3 rounded-xl"
+              <div key={i} className="flex items-start gap-3 p-4 rounded-xl"
                 style={{ background: "rgba(125,211,252,0.08)", border: "1px solid rgba(125,211,252,0.15)" }}>
-                <span className="text-xs font-black mt-0.5 flex-shrink-0" style={{ color: "#7dd3fc" }}>0{i+1}</span>
-                <span className="text-white text-xs leading-relaxed">{t}</span>
+                <span className="text-sm font-black mt-0.5 flex-shrink-0" style={{ color: "#7dd3fc" }}>0{i+1}</span>
+                <span className="text-white text-sm leading-relaxed">{t}</span>
               </div>
             ))}
           </div>
